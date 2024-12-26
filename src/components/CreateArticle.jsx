@@ -83,15 +83,13 @@ const CreateArticle = () => {
                     <VisuallyHiddenInput type="file" name="image" />
                 </Button>
                 <TextField
-                    sx={{ mb: 1 }}
                     label="Content"
                     variant="outlined"
                     name="content"
                     className="w-full"
-                    multiline
-                    minRows={4}
                     required
                 />
+
                 {error && (
                     <p className="text-sm text-red-500 text-center mb-5 font-semibold">
                         Something went wrong. Please check your input.
